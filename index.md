@@ -3,6 +3,12 @@ layout: default
 title: Home
 ---
 
-# Welcome
+# Welcome to My Blog
 
-This is my simple blog. See my latest posts below.
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> – {{ post.date | date: "%B %d, %Y" }}
+    </li>
+  {% endfor %}
+</ul>
