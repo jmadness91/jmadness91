@@ -6,3 +6,5 @@ title: My Blog
 description: >-
   A simple GitHub Pages blog.
 theme: jekyll-theme-minimal
+baseurl: "/jmadness91" # ← this is the key bit
+url: "https://jmadness91.github.io"
